@@ -1,0 +1,19 @@
+extends /layouts/default.pug
+
+block vars
+  - var isHomePage = true
+  - var title = "Главная"
+
+block header
+  include /components/base/header.pug
+
+block content
+  main.main-container
+    include /components/blocks/hero.pug
+    include /components/blocks/participate.pug
+    include /components/blocks/every-wednesday.pug
+    include /components/blocks/giving-september.pug
+    include /components/blocks/results.pug
+
+block footer
+  include /components/base/footer.pug

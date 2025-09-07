@@ -1,0 +1,16 @@
+include /components/mixins/mixins.pug
+
+header.main-header.header
+  nav.header__navigation
+    div.header__navigation-block
+      if isHomePage
+        picture
+          source(media="(max-width: 767px)", width="116", height="19", type="image/svg+xml", srcset="img/logo_mobile.svg")
+          source(media="(max-width: 1023px)", width="116", height="19", type="image/svg+xml", srcset="img/logo_mobile.svg")
+          img(src="img/logo_desktop.svg", alt="лого" width="165" height="49")
+      else
+        a.header__navigation-logo(href="index.html")
+          picture
+            source(media="(max-width: 767px)", width="116", height="19", type="image/svg+xml", srcset="img/logo_mobile.svg")
+            source(media="(max-width: 1023px)", width="116", height="19", type="image/svg+xml", srcset="img/logo_mobile.svg")
+            img(src="img/logo_desktop.svg", alt="лого" width="165" height="49")

@@ -1,0 +1,4 @@
+@use "./mixins" as *;
+
+@include font-face("Manrope", 500, normal, "../fonts/manrope-medium");
+@include font-face("Manrope", 700, normal, "../fonts/manrope-bold");
