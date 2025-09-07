@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="#">
-    <title>Пакет</title>
+    <title>Врамке</title>
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="preload" href="fonts/manrope-medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/manrope-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
@@ -18,15 +18,44 @@
     <div class="wrapper">
       <header class="main-header header">
         <nav class="header__navigation">
-          <div class="header__navigation-block">
+          <div class="header__navigation-logo">
             <picture>
-              <source media="(max-width: 767px)" width="116" height="19" type="image/svg+xml" srcset="img/logo_mobile.svg">
-              <source media="(max-width: 1023px)" width="116" height="19" type="image/svg+xml" srcset="img/logo_mobile.svg"><img src="img/logo_desktop.svg" alt="лого" width="165" height="49">
+              <source media="(max-width: 767px)" width="130" height="100" type="image/svg+xml" srcset="img/logo.svg">
+              <source media="(max-width: 1023px)" width="130" height="100" type="image/svg+xml" srcset="img/logo.svg"><img src="img/logo.svg" alt="лого" width="130" height="100">
             </picture>
+          </div>
+          <div class="header__navigation-wrapper">
+            <ul class="header__navigation-wrapper-list">
+                    <li class="header__navigation-wrapper-item"><a class="header__navigation-wrapper-link text-h-25" href="/">Главная</a></li>
+                    <li class="header__navigation-wrapper-item"><a class="header__navigation-wrapper-link text-h-25" href="/">Каталог</a></li>
+                    <li class="header__navigation-wrapper-item"><a class="header__navigation-wrapper-link text-h-25" href="/">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="header__navigation-search">
+            <form action="/" method="post">
+              <label for="search"></label>
+              <input type="text" name="search" id="search" maxlength="18">
+              <button type="button">
+                <svg>
+                  <use xlink:href="img/icons/sprite.svg#icon-search"></use>
+                </svg>
+              </button>
+            </form>
           </div>
         </nav>
       </header>
-      <main class="main-container"></main>
+      <main class="main-container">
+        <section class="main-container__hero hero">
+          <div class="hero__container">
+            <div class="hero__content-block">
+              <h3>Сделаем принты</h3>
+              <h4>на пакеты</h4>
+              <p>Опытные сотрудники учтут все ваши пожелания</p>
+            </div>
+            <div class="hero__image-block"></div>
+          </div>
+        </section>
+      </main>
       <script src="js/bundle.js"></script>
     </div>
   </body>

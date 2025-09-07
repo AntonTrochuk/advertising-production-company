@@ -1,3 +1,17 @@
 @use "../common/variables.scss" as *;
 @use "../common/mixins" as *;
 
+body {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.text-h-25 {
+  font-family: $basic-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+}

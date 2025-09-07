@@ -1,0 +1,9 @@
+@use "../common/variables.scss" as *;
+@use "../common/mixins" as *;
+
+.hero {
+  max-width: 1540px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: $color-background-blue-alice;
+}

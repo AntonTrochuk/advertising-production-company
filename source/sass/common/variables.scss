@@ -1,43 +1,18 @@
  /* Fonts */
-$basic-font: "Manrope";
+$basic-font: "Songer-se";
+$secondary-font: "Songer-g";
 
  /* Viewports */
 $tablet-width: 1023px;
 $mobile-width: 767px;
 
  /*--- Color ---*/
-$color-background-base: #ECF6FF;
 $color-background-white: #FFFFFF;
-$color-background-frost: #B6E3FD;
-$color-background-azur: #0088FE;
-$color-background-pink: #FCCCE8;
-$color-background-blue: #498AE9;
-$color-background-light-gray: #989898;
-$color-background-blue-alice: #E3F2FF;
-$color-background-pistachio: #A6F663;
-$color-background-dusty-blue: #C6EBDD;
-$color-background-blue-frost: #A6F4FF;
-$color-background-light-purple: #DFD2F0;
-$color-background-first-bloom: #C5BCFF;
-$color-background-button-tp: #FCFCFC;
-$color-background-button-tp-active: #D7E5FC;
-
+$color-background-blue: #022AF5;
+$color-background-blue-alice: #E2E6FE;
 
  /* hero */
 $color-text-white: #FFFFFF;
-$color-text-azur: #0088FE;
+$color-text-blue: #022AF5;
 $color-text-black: #252525;
-$color-text-crayola: #BAC1C7;
-$color-text-light-gray: #989898;
-$color-text-error: #FF5200;
 
-/* every-wednesday */
-$color-text-blue-frost: #48ABD3;
-$color-text-frost: #4891D3;
-$color-text-blue: #498AE9;
-$color-text-herbal: #5FAF2C;
-$color-text-greenish-blue: #2CA7AF;
-$color-text-moderate-turquoise: #50A8D9;
-
-/* footer */
-$color-text-grey: #535B62;
