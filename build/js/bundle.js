@@ -1,0 +1,1 @@
+(()=>{"use strict";var e=document.querySelector(".search button"),t=document.querySelector(".search");e.addEventListener("click",function(){t.classList.toggle("search--active")})})();

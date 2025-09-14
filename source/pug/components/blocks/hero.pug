@@ -3,7 +3,48 @@ include /components/mixins/mixins.pug
 section.main-container__hero.hero
   div.hero__container
     div.hero__content-block
-      h3.heading-h3 Сделаем принты
-      h4.heading-h4 на пакеты
-      p.text-he-25 Опытные сотрудники учтут все ваши пожелания
+      h3 Сделаем принты
+      h4 На пакеты
+      p Опытные сотрудники учтут все ваши пожелания
+      +button('Заказать', 'hero__button', 'button')
     div.hero__image-block
+      picture
+        source(
+          media="(max-width: 767px)",
+          width="450",
+          height="450",
+          type="image/webp",
+          srcset="img/hero_bags@1x.webp 1x, img/hero_bags@2x.webp 2x"
+        )
+        source(
+          media="(max-width: 1023px)",
+          width="450",
+          height="450",
+          type="image/webp",
+          srcset="img/hero_bags@1x.webp 1x, img/hero_bags@2x.webp 2x"
+        )
+        source(
+          type="image/webp",
+          srcset="img/hero_bags@1x.webp 1x, img/hero_bags@2x.webp 2x"
+        )
+        source(
+          media="(max-width: 767px)",
+          width="450",
+          height="450",
+          type="image/png",
+          srcset="img/hero_bags@1x.png 1x, img/hero_bags@2x.png 2x"
+        )
+        source(
+          media="(max-width: 1023px)",
+          width="450",
+          height="450",
+          type="image/png",
+          srcset="img/hero_bags@1x.png 1x, img/hero_bags@2x.png 2x"
+        )
+        img(
+          src="img/hero_bags@1x.png",
+          srcset="img/hero_bags@2x.png 2x",
+          width="450",
+          height="450",
+          alt="/"
+        )

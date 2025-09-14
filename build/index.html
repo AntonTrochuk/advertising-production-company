@@ -31,7 +31,7 @@
                     <li class="header__navigation-wrapper-item"><a class="header__navigation-wrapper-link text-h-25" href="/">Контакты</a></li>
             </ul>
           </div>
-          <div class="header__navigation-search">
+          <div class="header__navigation-search search">
             <form action="/" method="post">
               <label for="search"></label>
               <input type="text" name="search" id="search" maxlength="18">
@@ -48,11 +48,21 @@
         <section class="main-container__hero hero">
           <div class="hero__container">
             <div class="hero__content-block">
-              <h3 class="heading-h3">Сделаем принты</h3>
-              <h4 class="heading-h4">на пакеты</h4>
-              <p class="text-he-25">Опытные сотрудники учтут все ваши пожелания</p>
+              <h3>Сделаем принты</h3>
+              <h4>На пакеты</h4>
+              <p>Опытные сотрудники учтут все ваши пожелания</p>
+                      <button class="hero__button button text-b18 " type="button">Заказать
+                      </button>
             </div>
-            <div class="hero__image-block"></div>
+            <div class="hero__image-block">
+              <picture>
+                <source media="(max-width: 767px)" width="450" height="450" type="image/webp" srcset="img/hero_bags@1x.webp 1x, img/hero_bags@2x.webp 2x">
+                <source media="(max-width: 1023px)" width="450" height="450" type="image/webp" srcset="img/hero_bags@1x.webp 1x, img/hero_bags@2x.webp 2x">
+                <source type="image/webp" srcset="img/hero_bags@1x.webp 1x, img/hero_bags@2x.webp 2x">
+                <source media="(max-width: 767px)" width="450" height="450" type="image/png" srcset="img/hero_bags@1x.png 1x, img/hero_bags@2x.png 2x">
+                <source media="(max-width: 1023px)" width="450" height="450" type="image/png" srcset="img/hero_bags@1x.png 1x, img/hero_bags@2x.png 2x"><img src="img/hero_bags@1x.png" srcset="img/hero_bags@2x.png 2x" width="450" height="450" alt="/">
+              </picture>
+            </div>
           </div>
         </section>
       </main>

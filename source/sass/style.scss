@@ -6,6 +6,8 @@
 @use "./common/global" as *;
 
 /* BLOCKS */
-
+@use "./blocks/button" as *;
 @use "./blocks/header" as *;
 @use "./blocks/hero" as *;
+@use "./blocks/search" as *;
+
