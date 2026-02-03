@@ -2,6 +2,11 @@
 @use "../common/mixins" as *;
 
 .hero {
+  width: 100%;
+  background-color: $color-background-blue-alice;
+}
+
+.hero__block {
   max-width: 1540px;
   margin: 0 auto;
   padding: 0;
@@ -10,7 +15,6 @@
 .hero__container {
   padding: 50px 135px;
   min-height: 550px;
-  border-radius: 20px;
   background-color: $color-background-blue-alice;
   overflow: hidden;
 }
@@ -35,6 +39,7 @@
     font-size: 52px;
     margin: 125px 0 10px 0;
     color: $color3;
+    text-transform: uppercase;
   }
 
   h4 {
@@ -44,15 +49,17 @@
     font-size: 35px;
     margin: 0 0 30px 0;
     color: $color-text-blue;
+    text-transform: uppercase;
   }
 
   p {
     font-family: $basic-font;
     font-style: normal;
     font-weight: 400;
-    font-size: 17px;
+    font-size: 19px;
     margin: 0 0 30px 0;
     color: $color-text-blue;
+    text-transform: lowercase;
   }
 }
 
