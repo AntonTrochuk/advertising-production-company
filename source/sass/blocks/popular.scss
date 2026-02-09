@@ -1,0 +1,117 @@
+@use "../common/variables.scss" as *;
+@use "../common/mixins" as *;
+
+.popular {
+  background-color: rgba(240, 240, 240, 1);
+}
+
+.popular__container {
+  max-width: 1540px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.popular__subtitle-block {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 35px;
+
+  h2 {
+    order: 2;
+    font-family: $basic-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  span {
+    order: 1;
+    font-family: $basic-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: lowercase;
+    color: $color-text-blue;
+  }
+}
+
+.popular__list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.popular__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+}
+
+.popular__content-block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.479);
+  padding: 10px 10px 0;
+  box-sizing: border-box;
+}
+
+.popular__image-block {
+  padding: 10px 0;
+}
+
+.popular__text-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 0 0 10px;
+
+  h3 {
+    font-family: $basic-font;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  span {
+    font-family: $basic-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+  }
+}
+
+.popular__link {
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  text-decoration: none;
+  color: $color-text-white;
+  background-color: $color-background-blue;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  text-transform: uppercase;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+
+  span {
+    font-family: $basic-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+  }
+}

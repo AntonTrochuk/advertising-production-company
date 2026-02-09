@@ -8,3 +8,60 @@ mixin button(text, className, type, disabled)
     type=`${type}`
     disabled= disabled)= text
     block
+
+mixin popularItem(imgName, h3Text, spanText)
+  li.popular__item
+    div.popular__content-block
+      div.popular__stock-block.stock-block
+        span.stock-block__discount.stock-block__discount--active %
+      div.popular__image-block
+        picture
+          source(
+            media="(max-width: 767px)",
+            width="350",
+            height="350",
+            type="image/webp",
+            srcset=`img/${imgName}@1x.webp 1x, img/${imgName}@2x.webp 2x`
+          )
+          source(
+            media="(max-width: 1023px)",
+            width="350",
+            height="350",
+            type="image/webp",
+            srcset=`img/${imgName}@1x.webp 1x, img/${imgName}@2x.webp 2x`
+          )
+          source(
+            type="image/webp",
+            srcset=`img/${imgName}@1x.webp 1x, img/${imgName}@2x.webp 2x`
+          )
+          source(
+            media="(max-width: 767px)",
+            width="350",
+            height="350",
+            type="image/png",
+            srcset=`img/${imgName}@1x.png 1x, img/${imgName}@2x.png 2x`
+          )
+          source(
+            media="(max-width: 1023px)",
+            width="350",
+            height="350",
+            type="image/png",
+            srcset=`img/${imgName}@1x.png 1x, img/${imgName}@2x.png 2x`
+          )
+          img(
+            src=`img/${imgName}@1x.png`,
+            srcset=`img/${imgName}@2x.png 2x`,
+            height="280",
+            alt="/"
+          )
+      div.popular__text-block
+        h3=h3Text
+        span=`${spanText}₽`
+    +link('#', 'popular__link', 'Заказать')
+
+mixin link(href, className, text)
+  a(
+    href=`${href}`
+    class=`${className}`
+    )
+    span=text
