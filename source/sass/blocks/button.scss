@@ -18,6 +18,7 @@
   color: $color-text-white;
   background-color: $color-background-blue;
   transition: color 0.4s ease, background-color 0.4s ease;
+  text-transform: uppercase;
 
   &:hover {
     color: $color-background-blue;

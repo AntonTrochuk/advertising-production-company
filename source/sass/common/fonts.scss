@@ -1,8 +1,8 @@
 @use "./mixins" as *;
 
-@include font-face("Onest", 100, normal, "../fonts/Onest-100");
-@include font-face("Onest", 200, normal, "../fonts/Onest-200");
-@include font-face("Onest", 400, normal, "../fonts/Onest-400");
-@include font-face("Onest", 500, normal, "../fonts/Onest-500");
-@include font-face("Onest", 700, normal, "../fonts/Onest-700");
-@include font-face("Onest", 800, normal, "../fonts/Onest-800");
+@include font-face("FiraSans", 100, normal, "../fonts/FiraSans100");
+@include font-face("FiraSans", 200, normal, "../fonts/FiraSans200");
+@include font-face("FiraSans", 400, normal, "../fonts/FiraSans400");
+@include font-face("FiraSans", 500, normal, "../fonts/FiraSans500");
+@include font-face("FiraSans", 700, normal, "../fonts/FiraSans700");
+@include font-face("FiraSans", 800, normal, "../fonts/FiraSans800");

@@ -3,7 +3,9 @@
 
 .hero {
   width: 100%;
-  background-color: $color-background-blue-alice;
+  background-image: url('../../img/fon_hero.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero__block {
@@ -15,7 +17,6 @@
 .hero__container {
   padding: 50px 135px;
   min-height: 550px;
-  background-color: $color-background-blue-alice;
   overflow: hidden;
 }
 
@@ -64,7 +65,35 @@
 }
 
 .hero__image-block {
+
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(15px);
+  background: rgba(0, 0, 0, 0.068);
+
   picture {
     display: flex;
+  }
+}
+
+.hero__pagination {
+  display: flex;
+  gap: 12px;
+  height: 28px;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__toggle {
+  width: 15px;
+  height: 15px;
+  border: 1px solid rgba(37, 36, 36, 0.589);
+  border-radius: 50%;
+  cursor: pointer;
+
+  &--active {
+    background-color: black;
   }
 }

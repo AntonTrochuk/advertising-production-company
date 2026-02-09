@@ -1,6 +1,6 @@
 import { searchActive } from './search.js';
 import Swiper from 'swiper';
-import { Navigation, Scrollbar } from 'swiper/modules';
+import { Navigation, Pagination, Scrollbar } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/scrollbar';
@@ -10,7 +10,7 @@ searchActive ();
 
 const heroSwiper = document.querySelector('.hero-swiper');
 const heroSlider = new Swiper(heroSwiper, {
- modules: [Navigation, Scrollbar],
+ modules: [Navigation, Scrollbar, Pagination],
   loop: true,
   speed: 500,
   effect: 'fade',
@@ -34,11 +34,18 @@ const heroSlider = new Swiper(heroSwiper, {
     },
   },
 
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    type: 'bullets',
+    bulletClass: 'hero__toggle',
+    bulletActiveClass: 'hero__toggle--active',
+    dynamicBullets: false,
+  },
+
   navigation: {
     nextEl: '.programs__button--next',
     prevEl: '.programs__button--prev',
     disabledClass: 'disabled',
   },
 });
-
-heroSlider.update();
