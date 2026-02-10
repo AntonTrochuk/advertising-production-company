@@ -6,7 +6,7 @@
 }
 
 .runing-line__container {
-  max-width: 1540px;
+  width: 100%;
   margin: 0 auto;
   padding: 10px 0;
   overflow: hidden;
@@ -29,5 +29,5 @@
 
 .runing-line__item {
    -webkit-backface-visibility: hidden;
-   padding: 0 15px 0 0;
+   padding: 0 75px 0 0;
 }

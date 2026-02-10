@@ -1,0 +1,44 @@
+@use "../common/variables.scss" as *;
+@use "../common/mixins" as *;
+
+.footer {
+  background-color: $color-background-purple-blue;
+}
+
+.footer__container {
+  max-width: 1540px;
+  margin: 0 auto;
+  padding: 50px;
+  color: $color-text-white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer__contacts-block,
+.footer__salons-block {
+  h4 {
+    font-family: $basic-font;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin: 0 0 10px 0;
+  }
+}
+
+.footer__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.footer__item-link {
+  text-decoration: none;
+  color: $color-text-grey;
+  font-family: $basic-font;
+  font-style: normal;
+  font-weight: 500;
+}

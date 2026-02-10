@@ -1,0 +1,95 @@
+include /components/mixins/mixins.pug
+
+section.main-container__our-works.our-works
+  div.our-works__container
+    div.our-works__subtitle-block
+      h2 Наши работы
+      button.our-works__button
+        span Связаться
+    div.our-works__image-container.our-works-swiper
+      ul.our-works__list.swiper-wrapper
+        li.our-works__item.swiper-slide
+          div.our-works__item-content
+            picture
+              source(
+                media="(max-width: 767px)",
+                width="1050",
+                height="450",
+                type="image/webp",
+                srcset="img/our_works_img1@1x.webp 1x, img/our_works_img1@2x.webp 2x"
+              )
+              source(
+                media="(max-width: 1023px)",
+                width="1050",
+                height="450",
+                type="image/webp",
+                srcset="img/our_works_img1@1x.webp 1x, img/our_works_img1@2x.webp 2x"
+              )
+              source(
+                type="image/webp",
+                srcset="img/our_works_img1@1x.webp 1x, img/our_works_img1@2x.webp 2x"
+              )
+              source(
+                media="(max-width: 767px)",
+                width="1050",
+                height="450",
+                type="image/jpg",
+                srcset="img/our_works_img1@1x.jpg 1x, img/our_works_img1@2x.jpg 2x"
+              )
+              source(
+                media="(max-width: 1023px)",
+                width="1050",
+                height="450",
+                type="image/jpg",
+                srcset="img/our_works_img1@1x.jpg 1x, img/our_works_img1@2x.jpg 2x"
+              )
+              img(
+                src="img/our_works_img1@1x.jpg",
+                srcset="img/our_works_img1@2x.jpg 2x",
+                width="1050",
+                height="450",
+                alt="/"
+              )
+        li.our-works__item.swiper-slide
+          div.our-works__item-content
+            picture
+              source(
+                media="(max-width: 767px)",
+                width="1050",
+                height="450",
+                type="image/webp",
+                srcset="img/our_works_img2@1x.webp 1x, img/our_works_img2@2x.webp 2x"
+              )
+              source(
+                media="(max-width: 1023px)",
+                width="1050",
+                height="450",
+                type="image/webp",
+                srcset="img/our_works_img2@1x.webp 1x, img/our_works_img2@2x.webp 2x"
+              )
+              source(
+                type="image/webp",
+                srcset="img/our_works_img2@1x.webp 1x, img/our_works_img2@2x.webp 2x"
+              )
+              source(
+                media="(max-width: 767px)",
+                width="1050",
+                height="450",
+                type="image/jpg",
+                srcset="img/our_works_img2@1x.jpg 1x, img/our_works_img2@2x.jpg 2x"
+              )
+              source(
+                media="(max-width: 1023px)",
+                width="1050",
+                height="450",
+                type="image/jpg",
+                srcset="img/our_works_img2@1x.jpg 1x, img/our_works_img2@2x.jpg 2x"
+              )
+              img(
+                src="img/our_works_img2@1x.jpg",
+                srcset="img/our_works_img2@2x.jpg 2x",
+                width="1050",
+                height="450",
+                alt="/"
+              )
+      div.our-works__pagination.swiper-pagination
