@@ -17,32 +17,34 @@
   <body class="page-body">
     <div class="wrapper">
       <header class="main-header header">
-        <nav class="header__navigation">
-          <div class="header__navigation-logo">
-            <picture>
-              <source media="(max-width: 767px)" width="130" height="100" type="image/svg+xml" srcset="img/logo.svg">
-              <source media="(max-width: 1023px)" width="130" height="100" type="image/svg+xml" srcset="img/logo.svg"><img src="img/logo.svg" alt="лого" width="130" height="100">
-            </picture>
-          </div>
-          <div class="header__navigation-wrapper">
-            <ul class="header__navigation-wrapper-list">
-                    <li class="header__navigation-wrapper-item"><a class="header__navigation-wrapper-link text-h-25" href="/">Главная</a></li>
-                    <li class="header__navigation-wrapper-item"><a class="header__navigation-wrapper-link text-h-25" href="/">Каталог</a></li>
-                    <li class="header__navigation-wrapper-item"><a class="header__navigation-wrapper-link text-h-25" href="/">Контакты</a></li>
-            </ul>
-          </div>
-          <div class="header__navigation-search search">
-            <form action="/" method="post">
-              <label for="search"></label>
-              <input type="text" name="search" id="search" maxlength="18">
-              <button type="button">
-                <svg>
-                  <use xlink:href="img/icons/sprite.svg#icon-search"></use>
-                </svg>
-              </button>
-            </form>
-          </div>
-        </nav>
+        <div class="header__container">
+          <nav class="header__navigation">
+            <div class="header__navigation-logo">
+              <picture>
+                <source media="(max-width: 767px)" width="130" height="100" type="image/svg+xml" srcset="img/logo.svg">
+                <source media="(max-width: 1023px)" width="130" height="100" type="image/svg+xml" srcset="img/logo.svg"><img src="img/logo.svg" alt="лого" width="130" height="100">
+              </picture>
+            </div>
+            <div class="header__navigation-wrapper">
+              <ul class="header__navigation-wrapper-list">
+                      <li class="header__navigation-wrapper-item"><a class="header__navigation-wrapper-link text-h-25" href="index.html">Главная</a></li>
+                      <li class="header__navigation-wrapper-item"><a class="header__navigation-wrapper-link text-h-25" href="catalog.html">Каталог</a></li>
+                      <li class="header__navigation-wrapper-item"><a class="header__navigation-wrapper-link text-h-25" href="#.html">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="header__navigation-search search">
+              <form action="/" method="post">
+                <label for="search"></label>
+                <input type="text" name="search" id="search" maxlength="18">
+                <button type="button">
+                  <svg>
+                    <use xlink:href="img/icons/sprite.svg#icon-search"></use>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </nav>
+        </div>
       </header>
       <main class="main-container">
         <section class="main-container__hero hero">
@@ -181,11 +183,47 @@
               </li>
               <li class="runing-line__item">
                 <picture>
-                  <source media="(max-width: 767px)" width="250" height="150" type="image/webp" srcset="img/slavica_logo@1x.webp 1x, img/slavica_logo@2x.webp 2x">
-                  <source media="(max-width: 1023px)" width="250" height="150" type="image/webp" srcset="img/slavica_logo@1x.webp 1x, img/slavica_logo@2x.webp 2x">
-                  <source type="image/webp" srcset="img/slavica_logo@1x.webp 1x, img/slavica_logo@2x.webp 2x">
-                  <source media="(max-width: 767px)" width="250" height="150" type="image/png" srcset="img/slavica_logo@1x.png 1x, img/slavica_logo@2x.png 2x">
-                  <source media="(max-width: 1023px)" width="250" height="150" type="image/png" srcset="img/slavica_logo@1x.png 1x, img/slavica_logo@2x.png 2x"><img src="img/slavica_logo@1x.png" srcset="img/slavica_logo@2x.png 2x" width="250" height="150" alt="/">
+                  <source media="(max-width: 767px)" width="250" height="150" type="image/webp" srcset="img/insan_logo@1x.webp 1x, img/insan_logo@2x.webp 2x">
+                  <source media="(max-width: 1023px)" width="250" height="150" type="image/webp" srcset="img/insan_logo@1x.webp 1x, img/insan_logo@2x.webp 2x">
+                  <source type="image/webp" srcset="img/insan_logo@1x.webp 1x, img/insan_logo@2x.webp 2x">
+                  <source media="(max-width: 767px)" width="250" height="150" type="image/png" srcset="img/insan_logo@1x.png 1x, img/insan_logo@2x.png 2x">
+                  <source media="(max-width: 1023px)" width="250" height="150" type="image/png" srcset="img/insan_logo@1x.png 1x, img/insan_logo@2x.png 2x"><img src="img/insan_logo@1x.png" srcset="img/insan_logo@2x.png 2x" width="250" height="150" alt="/">
+                </picture>
+              </li>
+              <li class="runing-line__item">
+                <picture>
+                  <source media="(max-width: 767px)" width="250" height="150" type="image/webp" srcset="img/6e_logo@1x.webp 1x, img/6e_logo@2x.webp 2x">
+                  <source media="(max-width: 1023px)" width="250" height="150" type="image/webp" srcset="img/6e_logo@1x.webp 1x, img/6e_logo@2x.webp 2x">
+                  <source type="image/webp" srcset="img/6e_logo@1x.webp 1x, img/6e_logo@2x.webp 2x">
+                  <source media="(max-width: 767px)" width="250" height="150" type="image/png" srcset="img/6e_logo@1x.png 1x, img/6e_logo@2x.png 2x">
+                  <source media="(max-width: 1023px)" width="250" height="150" type="image/png" srcset="img/6e_logo@1x.png 1x, img/6e_logo@2x.png 2x"><img src="img/6e_logo@1x.png" srcset="img/6e_logo@2x.png 2x" width="250" height="150" alt="/">
+                </picture>
+              </li>
+              <li class="runing-line__item">
+                <picture>
+                  <source media="(max-width: 767px)" width="250" height="150" type="image/webp" srcset="img/gazprom_logo@1x.webp 1x, img/gazprom_logo@2x.webp 2x">
+                  <source media="(max-width: 1023px)" width="250" height="150" type="image/webp" srcset="img/gazprom_logo@1x.webp 1x, img/gazprom_logo@2x.webp 2x">
+                  <source type="image/webp" srcset="img/gazprom_logo@1x.webp 1x, img/gazprom_logo@2x.webp 2x">
+                  <source media="(max-width: 767px)" width="250" height="150" type="image/png" srcset="img/gazprom_logo@1x.png 1x, img/v_logo@2x.png 2x">
+                  <source media="(max-width: 1023px)" width="250" height="150" type="image/png" srcset="img/gazprom_logo@1x.png 1x, img/gazprom_logo@2x.png 2x"><img src="img/gazprom_logo@1x.png" srcset="img/gazprom_logo@2x.png 2x" width="250" height="150" alt="/">
+                </picture>
+              </li>
+              <li class="runing-line__item">
+                <picture>
+                  <source media="(max-width: 767px)" width="250" height="150" type="image/webp" srcset="img/astu_logo@1x.webp 1x, img/astu_logo@2x.webp 2x">
+                  <source media="(max-width: 1023px)" width="250" height="150" type="image/webp" srcset="img/astu_logo@1x.webp 1x, img/astu_logo@2x.webp 2x">
+                  <source type="image/webp" srcset="img/astu_logo@1x.webp 1x, img/astu_logo@2x.webp 2x">
+                  <source media="(max-width: 767px)" width="250" height="150" type="image/png" srcset="img/astu_logo@1x.png 1x, img/astu_logo@2x.png 2x">
+                  <source media="(max-width: 1023px)" width="250" height="150" type="image/png" srcset="img/astu_logo@1x.png 1x, img/astu_logo@2x.png 2x"><img src="img/astu_logo@1x.png" srcset="img/astu_logo@2x.png 2x" width="250" height="150" alt="/">
+                </picture>
+              </li>
+              <li class="runing-line__item">
+                <picture>
+                  <source media="(max-width: 767px)" width="250" height="150" type="image/webp" srcset="img/lukoil_logo@1x.webp 1x, img/lukoil_logo@2x.webp 2x">
+                  <source media="(max-width: 1023px)" width="250" height="150" type="image/webp" srcset="img/lukoil_logo@1x.webp 1x, img/lukoil_logo@2x.webp 2x">
+                  <source type="image/webp" srcset="img/lukoil_logo@1x.webp 1x, img/lukoil_logo@2x.webp 2x">
+                  <source media="(max-width: 767px)" width="250" height="150" type="image/png" srcset="img/lukoil_logo@1x.png 1x, img/lukoil_logo@2x.png 2x">
+                  <source media="(max-width: 1023px)" width="250" height="150" type="image/png" srcset="img/lukoil_logo@1x.png 1x, img/lukoil_logo@2x.png 2x"><img src="img/lukoil_logo@1x.png" srcset="img/lukoil_logo@2x.png 2x" width="250" height="150" alt="/">
                 </picture>
               </li>
               <li class="runing-line__item">
@@ -199,11 +237,20 @@
               </li>
               <li class="runing-line__item">
                 <picture>
-                  <source media="(max-width: 767px)" width="250" height="150" type="image/webp" srcset="img/slavica_logo@1x.webp 1x, img/slavica_logo@2x.webp 2x">
-                  <source media="(max-width: 1023px)" width="250" height="150" type="image/webp" srcset="img/slavica_logo@1x.webp 1x, img/slavica_logo@2x.webp 2x">
-                  <source type="image/webp" srcset="img/slavica_logo@1x.webp 1x, img/slavica_logo@2x.webp 2x">
-                  <source media="(max-width: 767px)" width="250" height="150" type="image/png" srcset="img/slavica_logo@1x.png 1x, img/slavica_logo@2x.png 2x">
-                  <source media="(max-width: 1023px)" width="250" height="150" type="image/png" srcset="img/slavica_logo@1x.png 1x, img/slavica_logo@2x.png 2x"><img src="img/slavica_logo@1x.png" srcset="img/slavica_logo@2x.png 2x" width="250" height="150" alt="/">
+                  <source media="(max-width: 767px)" width="250" height="150" type="image/webp" srcset="img/insan_logo@1x.webp 1x, img/insan_logo@2x.webp 2x">
+                  <source media="(max-width: 1023px)" width="250" height="150" type="image/webp" srcset="img/insan_logo@1x.webp 1x, img/insan_logo@2x.webp 2x">
+                  <source type="image/webp" srcset="img/insan_logo@1x.webp 1x, img/insan_logo@2x.webp 2x">
+                  <source media="(max-width: 767px)" width="250" height="150" type="image/png" srcset="img/insan_logo@1x.png 1x, img/insan_logo@2x.png 2x">
+                  <source media="(max-width: 1023px)" width="250" height="150" type="image/png" srcset="img/insan_logo@1x.png 1x, img/insan_logo@2x.png 2x"><img src="img/insan_logo@1x.png" srcset="img/insan_logo@2x.png 2x" width="250" height="150" alt="/">
+                </picture>
+              </li>
+              <li class="runing-line__item">
+                <picture>
+                  <source media="(max-width: 767px)" width="250" height="150" type="image/webp" srcset="img/6e_logo@1x.webp 1x, img/6e_logo@2x.webp 2x">
+                  <source media="(max-width: 1023px)" width="250" height="150" type="image/webp" srcset="img/6e_logo@1x.webp 1x, img/6e_logo@2x.webp 2x">
+                  <source type="image/webp" srcset="img/6e_logo@1x.webp 1x, img/6e_logo@2x.webp 2x">
+                  <source media="(max-width: 767px)" width="250" height="150" type="image/png" srcset="img/6e_logo@1x.png 1x, img/6e_logo@2x.png 2x">
+                  <source media="(max-width: 1023px)" width="250" height="150" type="image/png" srcset="img/6e_logo@1x.png 1x, img/6e_logo@2x.png 2x"><img src="img/6e_logo@1x.png" srcset="img/6e_logo@2x.png 2x" width="250" height="150" alt="/">
                 </picture>
               </li>
               <li class="runing-line__item">
@@ -217,11 +264,47 @@
               </li>
               <li class="runing-line__item">
                 <picture>
-                  <source media="(max-width: 767px)" width="250" height="150" type="image/webp" srcset="img/slavica_logo@1x.webp 1x, img/slavica_logo@2x.webp 2x">
-                  <source media="(max-width: 1023px)" width="250" height="150" type="image/webp" srcset="img/slavica_logo@1x.webp 1x, img/slavica_logo@2x.webp 2x">
-                  <source type="image/webp" srcset="img/slavica_logo@1x.webp 1x, img/slavica_logo@2x.webp 2x">
-                  <source media="(max-width: 767px)" width="250" height="150" type="image/png" srcset="img/slavica_logo@1x.png 1x, img/slavica_logo@2x.png 2x">
-                  <source media="(max-width: 1023px)" width="250" height="150" type="image/png" srcset="img/slavica_logo@1x.png 1x, img/slavica_logo@2x.png 2x"><img src="img/slavica_logo@1x.png" srcset="img/slavica_logo@2x.png 2x" width="250" height="150" alt="/">
+                  <source media="(max-width: 767px)" width="250" height="150" type="image/webp" srcset="img/insan_logo@1x.webp 1x, img/insan_logo@2x.webp 2x">
+                  <source media="(max-width: 1023px)" width="250" height="150" type="image/webp" srcset="img/insan_logo@1x.webp 1x, img/insan_logo@2x.webp 2x">
+                  <source type="image/webp" srcset="img/insan_logo@1x.webp 1x, img/insan_logo@2x.webp 2x">
+                  <source media="(max-width: 767px)" width="250" height="150" type="image/png" srcset="img/insan_logo@1x.png 1x, img/insan_logo@2x.png 2x">
+                  <source media="(max-width: 1023px)" width="250" height="150" type="image/png" srcset="img/insan_logo@1x.png 1x, img/insan_logo@2x.png 2x"><img src="img/insan_logo@1x.png" srcset="img/insan_logo@2x.png 2x" width="250" height="150" alt="/">
+                </picture>
+              </li>
+              <li class="runing-line__item">
+                <picture>
+                  <source media="(max-width: 767px)" width="250" height="150" type="image/webp" srcset="img/6e_logo@1x.webp 1x, img/6e_logo@2x.webp 2x">
+                  <source media="(max-width: 1023px)" width="250" height="150" type="image/webp" srcset="img/6e_logo@1x.webp 1x, img/6e_logo@2x.webp 2x">
+                  <source type="image/webp" srcset="img/6e_logo@1x.webp 1x, img/6e_logo@2x.webp 2x">
+                  <source media="(max-width: 767px)" width="250" height="150" type="image/png" srcset="img/6e_logo@1x.png 1x, img/6e_logo@2x.png 2x">
+                  <source media="(max-width: 1023px)" width="250" height="150" type="image/png" srcset="img/6e_logo@1x.png 1x, img/6e_logo@2x.png 2x"><img src="img/6e_logo@1x.png" srcset="img/6e_logo@2x.png 2x" width="250" height="150" alt="/">
+                </picture>
+              </li>
+              <li class="runing-line__item">
+                <picture>
+                  <source media="(max-width: 767px)" width="250" height="150" type="image/webp" srcset="img/gazprom_logo@1x.webp 1x, img/gazprom_logo@2x.webp 2x">
+                  <source media="(max-width: 1023px)" width="250" height="150" type="image/webp" srcset="img/gazprom_logo@1x.webp 1x, img/gazprom_logo@2x.webp 2x">
+                  <source type="image/webp" srcset="img/gazprom_logo@1x.webp 1x, img/gazprom_logo@2x.webp 2x">
+                  <source media="(max-width: 767px)" width="250" height="150" type="image/png" srcset="img/gazprom_logo@1x.png 1x, img/v_logo@2x.png 2x">
+                  <source media="(max-width: 1023px)" width="250" height="150" type="image/png" srcset="img/gazprom_logo@1x.png 1x, img/gazprom_logo@2x.png 2x"><img src="img/gazprom_logo@1x.png" srcset="img/gazprom_logo@2x.png 2x" width="250" height="150" alt="/">
+                </picture>
+              </li>
+              <li class="runing-line__item">
+                <picture>
+                  <source media="(max-width: 767px)" width="250" height="150" type="image/webp" srcset="img/astu_logo@1x.webp 1x, img/astu_logo@2x.webp 2x">
+                  <source media="(max-width: 1023px)" width="250" height="150" type="image/webp" srcset="img/astu_logo@1x.webp 1x, img/astu_logo@2x.webp 2x">
+                  <source type="image/webp" srcset="img/astu_logo@1x.webp 1x, img/astu_logo@2x.webp 2x">
+                  <source media="(max-width: 767px)" width="250" height="150" type="image/png" srcset="img/astu_logo@1x.png 1x, img/astu_logo@2x.png 2x">
+                  <source media="(max-width: 1023px)" width="250" height="150" type="image/png" srcset="img/astu_logo@1x.png 1x, img/astu_logo@2x.png 2x"><img src="img/astu_logo@1x.png" srcset="img/astu_logo@2x.png 2x" width="250" height="150" alt="/">
+                </picture>
+              </li>
+              <li class="runing-line__item">
+                <picture>
+                  <source media="(max-width: 767px)" width="250" height="150" type="image/webp" srcset="img/lukoil_logo@1x.webp 1x, img/lukoil_logo@2x.webp 2x">
+                  <source media="(max-width: 1023px)" width="250" height="150" type="image/webp" srcset="img/lukoil_logo@1x.webp 1x, img/lukoil_logo@2x.webp 2x">
+                  <source type="image/webp" srcset="img/lukoil_logo@1x.webp 1x, img/lukoil_logo@2x.webp 2x">
+                  <source media="(max-width: 767px)" width="250" height="150" type="image/png" srcset="img/lukoil_logo@1x.png 1x, img/lukoil_logo@2x.png 2x">
+                  <source media="(max-width: 1023px)" width="250" height="150" type="image/png" srcset="img/lukoil_logo@1x.png 1x, img/lukoil_logo@2x.png 2x"><img src="img/lukoil_logo@1x.png" srcset="img/lukoil_logo@2x.png 2x" width="250" height="150" alt="/">
                 </picture>
               </li>
               <li class="runing-line__item">
@@ -235,101 +318,20 @@
               </li>
               <li class="runing-line__item">
                 <picture>
-                  <source media="(max-width: 767px)" width="250" height="150" type="image/webp" srcset="img/slavica_logo@1x.webp 1x, img/slavica_logo@2x.webp 2x">
-                  <source media="(max-width: 1023px)" width="250" height="150" type="image/webp" srcset="img/slavica_logo@1x.webp 1x, img/slavica_logo@2x.webp 2x">
-                  <source type="image/webp" srcset="img/slavica_logo@1x.webp 1x, img/slavica_logo@2x.webp 2x">
-                  <source media="(max-width: 767px)" width="250" height="150" type="image/png" srcset="img/slavica_logo@1x.png 1x, img/slavica_logo@2x.png 2x">
-                  <source media="(max-width: 1023px)" width="250" height="150" type="image/png" srcset="img/slavica_logo@1x.png 1x, img/slavica_logo@2x.png 2x"><img src="img/slavica_logo@1x.png" srcset="img/slavica_logo@2x.png 2x" width="250" height="150" alt="/">
+                  <source media="(max-width: 767px)" width="250" height="150" type="image/webp" srcset="img/insan_logo@1x.webp 1x, img/insan_logo@2x.webp 2x">
+                  <source media="(max-width: 1023px)" width="250" height="150" type="image/webp" srcset="img/insan_logo@1x.webp 1x, img/insan_logo@2x.webp 2x">
+                  <source type="image/webp" srcset="img/insan_logo@1x.webp 1x, img/insan_logo@2x.webp 2x">
+                  <source media="(max-width: 767px)" width="250" height="150" type="image/png" srcset="img/insan_logo@1x.png 1x, img/insan_logo@2x.png 2x">
+                  <source media="(max-width: 1023px)" width="250" height="150" type="image/png" srcset="img/insan_logo@1x.png 1x, img/insan_logo@2x.png 2x"><img src="img/insan_logo@1x.png" srcset="img/insan_logo@2x.png 2x" width="250" height="150" alt="/">
                 </picture>
               </li>
               <li class="runing-line__item">
                 <picture>
-                  <source media="(max-width: 767px)" width="250" height="150" type="image/webp" srcset="img/slavica_logo@1x.webp 1x, img/slavica_logo@2x.webp 2x">
-                  <source media="(max-width: 1023px)" width="250" height="150" type="image/webp" srcset="img/slavica_logo@1x.webp 1x, img/slavica_logo@2x.webp 2x">
-                  <source type="image/webp" srcset="img/slavica_logo@1x.webp 1x, img/slavica_logo@2x.webp 2x">
-                  <source media="(max-width: 767px)" width="250" height="150" type="image/png" srcset="img/slavica_logo@1x.png 1x, img/slavica_logo@2x.png 2x">
-                  <source media="(max-width: 1023px)" width="250" height="150" type="image/png" srcset="img/slavica_logo@1x.png 1x, img/slavica_logo@2x.png 2x"><img src="img/slavica_logo@1x.png" srcset="img/slavica_logo@2x.png 2x" width="250" height="150" alt="/">
-                </picture>
-              </li>
-              <li class="runing-line__item">
-                <picture>
-                  <source media="(max-width: 767px)" width="250" height="150" type="image/webp" srcset="img/slavica_logo@1x.webp 1x, img/slavica_logo@2x.webp 2x">
-                  <source media="(max-width: 1023px)" width="250" height="150" type="image/webp" srcset="img/slavica_logo@1x.webp 1x, img/slavica_logo@2x.webp 2x">
-                  <source type="image/webp" srcset="img/slavica_logo@1x.webp 1x, img/slavica_logo@2x.webp 2x">
-                  <source media="(max-width: 767px)" width="250" height="150" type="image/png" srcset="img/slavica_logo@1x.png 1x, img/slavica_logo@2x.png 2x">
-                  <source media="(max-width: 1023px)" width="250" height="150" type="image/png" srcset="img/slavica_logo@1x.png 1x, img/slavica_logo@2x.png 2x"><img src="img/slavica_logo@1x.png" srcset="img/slavica_logo@2x.png 2x" width="250" height="150" alt="/">
-                </picture>
-              </li>
-              <li class="runing-line__item">
-                <picture>
-                  <source media="(max-width: 767px)" width="250" height="150" type="image/webp" srcset="img/slavica_logo@1x.webp 1x, img/slavica_logo@2x.webp 2x">
-                  <source media="(max-width: 1023px)" width="250" height="150" type="image/webp" srcset="img/slavica_logo@1x.webp 1x, img/slavica_logo@2x.webp 2x">
-                  <source type="image/webp" srcset="img/slavica_logo@1x.webp 1x, img/slavica_logo@2x.webp 2x">
-                  <source media="(max-width: 767px)" width="250" height="150" type="image/png" srcset="img/slavica_logo@1x.png 1x, img/slavica_logo@2x.png 2x">
-                  <source media="(max-width: 1023px)" width="250" height="150" type="image/png" srcset="img/slavica_logo@1x.png 1x, img/slavica_logo@2x.png 2x"><img src="img/slavica_logo@1x.png" srcset="img/slavica_logo@2x.png 2x" width="250" height="150" alt="/">
-                </picture>
-              </li>
-              <li class="runing-line__item">
-                <picture>
-                  <source media="(max-width: 767px)" width="250" height="150" type="image/webp" srcset="img/slavica_logo@1x.webp 1x, img/slavica_logo@2x.webp 2x">
-                  <source media="(max-width: 1023px)" width="250" height="150" type="image/webp" srcset="img/slavica_logo@1x.webp 1x, img/slavica_logo@2x.webp 2x">
-                  <source type="image/webp" srcset="img/slavica_logo@1x.webp 1x, img/slavica_logo@2x.webp 2x">
-                  <source media="(max-width: 767px)" width="250" height="150" type="image/png" srcset="img/slavica_logo@1x.png 1x, img/slavica_logo@2x.png 2x">
-                  <source media="(max-width: 1023px)" width="250" height="150" type="image/png" srcset="img/slavica_logo@1x.png 1x, img/slavica_logo@2x.png 2x"><img src="img/slavica_logo@1x.png" srcset="img/slavica_logo@2x.png 2x" width="250" height="150" alt="/">
-                </picture>
-              </li>
-              <li class="runing-line__item">
-                <picture>
-                  <source media="(max-width: 767px)" width="250" height="150" type="image/webp" srcset="img/slavica_logo@1x.webp 1x, img/slavica_logo@2x.webp 2x">
-                  <source media="(max-width: 1023px)" width="250" height="150" type="image/webp" srcset="img/slavica_logo@1x.webp 1x, img/slavica_logo@2x.webp 2x">
-                  <source type="image/webp" srcset="img/slavica_logo@1x.webp 1x, img/slavica_logo@2x.webp 2x">
-                  <source media="(max-width: 767px)" width="250" height="150" type="image/png" srcset="img/slavica_logo@1x.png 1x, img/slavica_logo@2x.png 2x">
-                  <source media="(max-width: 1023px)" width="250" height="150" type="image/png" srcset="img/slavica_logo@1x.png 1x, img/slavica_logo@2x.png 2x"><img src="img/slavica_logo@1x.png" srcset="img/slavica_logo@2x.png 2x" width="250" height="150" alt="/">
-                </picture>
-              </li>
-              <li class="runing-line__item">
-                <picture>
-                  <source media="(max-width: 767px)" width="250" height="150" type="image/webp" srcset="img/slavica_logo@1x.webp 1x, img/slavica_logo@2x.webp 2x">
-                  <source media="(max-width: 1023px)" width="250" height="150" type="image/webp" srcset="img/slavica_logo@1x.webp 1x, img/slavica_logo@2x.webp 2x">
-                  <source type="image/webp" srcset="img/slavica_logo@1x.webp 1x, img/slavica_logo@2x.webp 2x">
-                  <source media="(max-width: 767px)" width="250" height="150" type="image/png" srcset="img/slavica_logo@1x.png 1x, img/slavica_logo@2x.png 2x">
-                  <source media="(max-width: 1023px)" width="250" height="150" type="image/png" srcset="img/slavica_logo@1x.png 1x, img/slavica_logo@2x.png 2x"><img src="img/slavica_logo@1x.png" srcset="img/slavica_logo@2x.png 2x" width="250" height="150" alt="/">
-                </picture>
-              </li>
-              <li class="runing-line__item">
-                <picture>
-                  <source media="(max-width: 767px)" width="250" height="150" type="image/webp" srcset="img/slavica_logo@1x.webp 1x, img/slavica_logo@2x.webp 2x">
-                  <source media="(max-width: 1023px)" width="250" height="150" type="image/webp" srcset="img/slavica_logo@1x.webp 1x, img/slavica_logo@2x.webp 2x">
-                  <source type="image/webp" srcset="img/slavica_logo@1x.webp 1x, img/slavica_logo@2x.webp 2x">
-                  <source media="(max-width: 767px)" width="250" height="150" type="image/png" srcset="img/slavica_logo@1x.png 1x, img/slavica_logo@2x.png 2x">
-                  <source media="(max-width: 1023px)" width="250" height="150" type="image/png" srcset="img/slavica_logo@1x.png 1x, img/slavica_logo@2x.png 2x"><img src="img/slavica_logo@1x.png" srcset="img/slavica_logo@2x.png 2x" width="250" height="150" alt="/">
-                </picture>
-              </li>
-              <li class="runing-line__item">
-                <picture>
-                  <source media="(max-width: 767px)" width="250" height="150" type="image/webp" srcset="img/slavica_logo@1x.webp 1x, img/slavica_logo@2x.webp 2x">
-                  <source media="(max-width: 1023px)" width="250" height="150" type="image/webp" srcset="img/slavica_logo@1x.webp 1x, img/slavica_logo@2x.webp 2x">
-                  <source type="image/webp" srcset="img/slavica_logo@1x.webp 1x, img/slavica_logo@2x.webp 2x">
-                  <source media="(max-width: 767px)" width="250" height="150" type="image/png" srcset="img/slavica_logo@1x.png 1x, img/slavica_logo@2x.png 2x">
-                  <source media="(max-width: 1023px)" width="250" height="150" type="image/png" srcset="img/slavica_logo@1x.png 1x, img/slavica_logo@2x.png 2x"><img src="img/slavica_logo@1x.png" srcset="img/slavica_logo@2x.png 2x" width="250" height="150" alt="/">
-                </picture>
-              </li>
-              <li class="runing-line__item">
-                <picture>
-                  <source media="(max-width: 767px)" width="250" height="150" type="image/webp" srcset="img/slavica_logo@1x.webp 1x, img/slavica_logo@2x.webp 2x">
-                  <source media="(max-width: 1023px)" width="250" height="150" type="image/webp" srcset="img/slavica_logo@1x.webp 1x, img/slavica_logo@2x.webp 2x">
-                  <source type="image/webp" srcset="img/slavica_logo@1x.webp 1x, img/slavica_logo@2x.webp 2x">
-                  <source media="(max-width: 767px)" width="250" height="150" type="image/png" srcset="img/slavica_logo@1x.png 1x, img/slavica_logo@2x.png 2x">
-                  <source media="(max-width: 1023px)" width="250" height="150" type="image/png" srcset="img/slavica_logo@1x.png 1x, img/slavica_logo@2x.png 2x"><img src="img/slavica_logo@1x.png" srcset="img/slavica_logo@2x.png 2x" width="250" height="150" alt="/">
-                </picture>
-              </li>
-              <li class="runing-line__item">
-                <picture>
-                  <source media="(max-width: 767px)" width="250" height="150" type="image/webp" srcset="img/slavica_logo@1x.webp 1x, img/slavica_logo@2x.webp 2x">
-                  <source media="(max-width: 1023px)" width="250" height="150" type="image/webp" srcset="img/slavica_logo@1x.webp 1x, img/slavica_logo@2x.webp 2x">
-                  <source type="image/webp" srcset="img/slavica_logo@1x.webp 1x, img/slavica_logo@2x.webp 2x">
-                  <source media="(max-width: 767px)" width="250" height="150" type="image/png" srcset="img/slavica_logo@1x.png 1x, img/slavica_logo@2x.png 2x">
-                  <source media="(max-width: 1023px)" width="250" height="150" type="image/png" srcset="img/slavica_logo@1x.png 1x, img/slavica_logo@2x.png 2x"><img src="img/slavica_logo@1x.png" srcset="img/slavica_logo@2x.png 2x" width="250" height="150" alt="/">
+                  <source media="(max-width: 767px)" width="250" height="150" type="image/webp" srcset="img/6e_logo@1x.webp 1x, img/6e_logo@2x.webp 2x">
+                  <source media="(max-width: 1023px)" width="250" height="150" type="image/webp" srcset="img/6e_logo@1x.webp 1x, img/6e_logo@2x.webp 2x">
+                  <source type="image/webp" srcset="img/6e_logo@1x.webp 1x, img/6e_logo@2x.webp 2x">
+                  <source media="(max-width: 767px)" width="250" height="150" type="image/png" srcset="img/6e_logo@1x.png 1x, img/6e_logo@2x.png 2x">
+                  <source media="(max-width: 1023px)" width="250" height="150" type="image/png" srcset="img/6e_logo@1x.png 1x, img/6e_logo@2x.png 2x"><img src="img/6e_logo@1x.png" srcset="img/6e_logo@2x.png 2x" width="250" height="150" alt="/">
                 </picture>
               </li>
             </ul>

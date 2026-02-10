@@ -5,6 +5,12 @@ body {
   margin: 0;
 }
 
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 li {
   list-style: none;
 }

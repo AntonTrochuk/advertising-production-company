@@ -1,7 +1,7 @@
 @use "../common/variables.scss" as *;
 @use "../common/mixins" as *;
 
-.header {
+.header__container {
   max-width: 1540px;
   margin: 0 auto;
   padding: 10px 25px;
