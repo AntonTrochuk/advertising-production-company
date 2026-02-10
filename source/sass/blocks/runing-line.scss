@@ -1,0 +1,33 @@
+@use "../common/variables.scss" as *;
+@use "../common/mixins" as *;
+
+.runing-line {
+  background-color: $color-background-blue;
+}
+
+.runing-line__container {
+  max-width: 1540px;
+  margin: 0 auto;
+  padding: 10px 0;
+  overflow: hidden;
+}
+
+.runing-line__list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  width: fit-content;
+  animation: ticker 10s linear infinite;
+  -webkit-transform-style: preserve-3d;
+}
+
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.runing-line__item {
+   -webkit-backface-visibility: hidden;
+   padding: 0 15px 0 0;
+}

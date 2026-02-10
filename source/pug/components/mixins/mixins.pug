@@ -18,15 +18,11 @@ mixin popularItem(imgName, h3Text, spanText)
         picture
           source(
             media="(max-width: 767px)",
-            width="350",
-            height="350",
             type="image/webp",
             srcset=`img/${imgName}@1x.webp 1x, img/${imgName}@2x.webp 2x`
           )
           source(
             media="(max-width: 1023px)",
-            width="350",
-            height="350",
             type="image/webp",
             srcset=`img/${imgName}@1x.webp 1x, img/${imgName}@2x.webp 2x`
           )
@@ -36,22 +32,17 @@ mixin popularItem(imgName, h3Text, spanText)
           )
           source(
             media="(max-width: 767px)",
-            width="350",
-            height="350",
             type="image/png",
             srcset=`img/${imgName}@1x.png 1x, img/${imgName}@2x.png 2x`
           )
           source(
             media="(max-width: 1023px)",
-            width="350",
-            height="350",
             type="image/png",
             srcset=`img/${imgName}@1x.png 1x, img/${imgName}@2x.png 2x`
           )
           img(
             src=`img/${imgName}@1x.png`,
             srcset=`img/${imgName}@2x.png 2x`,
-            height="280",
             alt="/"
           )
       div.popular__text-block

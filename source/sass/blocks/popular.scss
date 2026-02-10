@@ -69,6 +69,11 @@
 
 .popular__image-block {
   padding: 10px 0;
+
+  img {
+    width: clamp(200px, 15vw, 280px);
+    height: clamp(200px, 15vw, 280px);
+  }
 }
 
 .popular__text-block {
