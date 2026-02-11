@@ -56,3 +56,44 @@ mixin link(href, className, text)
     class=`${className}`
     )
     span=text
+
+mixin contentLeftBlockItem(href, title)
+  li.content__left-block-item
+    a.content__left-block-link(href=href)
+      span=title
+
+mixin contentRightBlockItem(imgName, h3Text)
+  li.content__right-block-item
+    a(href="#").content__right-block-link
+      div.content__right-block-image
+        picture
+          source(
+            media="(max-width: 767px)",
+            type="image/webp",
+            srcset=`img/${imgName}@1x.webp 1x, img/${imgName}@2x.webp 2x`
+          )
+          source(
+            media="(max-width: 1023px)",
+            type="image/webp",
+            srcset=`img/${imgName}@1x.webp 1x, img/${imgName}@2x.webp 2x`
+          )
+          source(
+            type="image/webp",
+            srcset=`img/${imgName}@1x.webp 1x, img/${imgName}@2x.webp 2x`
+          )
+          source(
+            media="(max-width: 767px)",
+            type="image/png",
+            srcset=`img/${imgName}@1x.png 1x, img/${imgName}@2x.png 2x`
+          )
+          source(
+            media="(max-width: 1023px)",
+            type="image/png",
+            srcset=`img/${imgName}@1x.png 1x, img/${imgName}@2x.png 2x`
+          )
+          img(
+            src=`img/${imgName}@1x.png`,
+            srcset=`img/${imgName}@2x.png 2x`,
+            alt="/"
+          )
+      h3=h3Text

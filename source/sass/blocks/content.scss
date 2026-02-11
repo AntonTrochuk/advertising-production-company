@@ -1,0 +1,112 @@
+@use "../common/variables.scss" as *;
+@use "../common/mixins" as *;
+
+.content__container {
+  max-width: 1540px;
+  margin: 0 auto;
+  padding: 0 50px 50px;
+  display: grid;
+  grid-template-columns: 250px auto;
+  align-items: start;
+  gap: 0 30px;
+}
+
+.content__left-section {
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(15px);
+  background: rgba(0, 0, 0, 0.068);
+  font-family: $basic-font;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.content__left-block-list {
+  margin: 0;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.content__left-block-link {
+  text-decoration: none;
+  color: $color-text-black;
+}
+
+.content__right-section {
+  border-radius: 15px;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(15px);
+  background: rgba(0, 0, 0, 0.068);
+  padding: 15px;
+
+  h2 {
+    display: block;
+    margin: 0;
+    font-family: $basic-font;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 0 0 15px 0;
+    font-size: 27px;
+  }
+}
+
+.content__right-block {
+  margin: 0 0 40px 0;
+}
+
+.content__right-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  flex: 1;
+  position: relative;
+}
+
+.content__right-block-item {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+}
+
+.content__right-block-link {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.836);
+  text-decoration: none;
+  color: $color-text-black;
+  flex: 1;
+
+  h3 {
+    margin: auto 0;
+    display: block;
+    font-family: $basic-font;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 10px 0;
+  }
+}
+
+.content__right-block-image {
+
+  img {
+    width: 240px;
+    height: 220px;
+  }
+}

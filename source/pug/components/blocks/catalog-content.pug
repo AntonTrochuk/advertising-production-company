@@ -1,0 +1,40 @@
+include /components/mixins/mixins.pug
+
+section.catalog__content.content
+  div.content__container
+    div.content__left-section
+      ul.content__left-block-list
+        +contentLeftBlockItem('#', 'Фотоуслуги')
+        +contentLeftBlockItem('#', 'Фотосувениры')
+        +contentLeftBlockItem('#', 'Наружная реклама')
+        +contentLeftBlockItem('#', 'Расходные материалы')
+        +contentLeftBlockItem('#', 'Фоторамки')
+        +contentLeftBlockItem('#', 'Пакеты')
+        +contentLeftBlockItem('#', 'Печать чертежей')
+        +contentLeftBlockItem('#', 'Печати и штампы')
+        +contentLeftBlockItem('#', 'Брошюрование')
+        +contentLeftBlockItem('#', 'Пищевая печать')
+        +contentLeftBlockItem('#', 'Фотоальбомы')
+    div.content__right-section
+      div.content__right-block.content__right-block--photo-services
+        h2 Фотоуслуги
+        ul.content__right-list.content__right-list--photo-services
+          +contentRightBlockItem('hero_bags', 'Фото на документы')
+          +contentRightBlockItem('plates', 'Распечатка')
+          +contentRightBlockItem('mugs', 'Ламинирование')
+          +contentRightBlockItem('hero_bags', 'Распечатка фото')
+          +contentRightBlockItem('hero_bags', 'Сканирование')
+          +contentRightBlockItem('hero_bags', 'Восстановление')
+          +contentRightBlockItem('hero_bags', 'Печать на самоклейке')
+          +contentRightBlockItem('hero_bags', 'Фото на памятник')
+      div.content__right-block.content__right-block--photo-services
+        h2 Фотосувениры
+        ul.content__right-list.content__right-list--photo-services
+          +contentRightBlockItem('hero_bags', 'Фото на документы')
+          +contentRightBlockItem('hero_bags', 'Распечатка')
+          +contentRightBlockItem('hero_bags', 'Ламинирование')
+          +contentRightBlockItem('hero_bags', 'Распечатка фото')
+          +contentRightBlockItem('hero_bags', 'Сканирование')
+          +contentRightBlockItem('hero_bags', 'Восстановление')
+          +contentRightBlockItem('hero_bags', 'Печать на самоклейке')
+          +contentRightBlockItem('hero_bags', 'Фото на памятник')
