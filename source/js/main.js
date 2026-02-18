@@ -1,11 +1,13 @@
-import { searchActive } from './search.js';
+import {searchActive} from './search.js';
+import {wrapperOpen} from './wrapper.js';
 import Swiper from 'swiper';
-import { Navigation, Pagination, Scrollbar } from 'swiper/modules';
+import {Navigation, Pagination, Scrollbar} from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/scrollbar';
 
 searchActive ();
+wrapperOpen ();
 
 
 const heroSwiper = document.querySelector('.hero-swiper');

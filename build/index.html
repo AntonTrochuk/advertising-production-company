@@ -7,8 +7,8 @@
     <meta name="description" content="#">
     <title>Врамке</title>
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="preload" href="fonts/manrope-medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/manrope-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/FiraSans400.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/FiraSans500.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
     <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png">
@@ -21,11 +21,16 @@
           <nav class="header__navigation">
             <div class="header__navigation-logo">
               <picture>
-                <source media="(max-width: 767px)" width="130" height="100" type="image/svg+xml" srcset="img/logo.svg">
+                <source media="(max-width: 767px)" width="70" height="60" type="image/svg+xml" srcset="img/logo.svg">
                 <source media="(max-width: 1023px)" width="130" height="100" type="image/svg+xml" srcset="img/logo.svg"><img src="img/logo.svg" alt="лого" width="130" height="100">
               </picture>
             </div>
             <div class="header__navigation-wrapper">
+              <div class="header__navigation-wrapper-mobile-icon">
+                <svg>
+                  <use xlink:href="img/icons/sprite.svg#icons_mobile_menu"></use>
+                </svg>
+              </div>
               <ul class="header__navigation-wrapper-list">
                       <li class="header__navigation-wrapper-item"><a class="header__navigation-wrapper-link text-h-25" href="index.html">Главная</a></li>
                       <li class="header__navigation-wrapper-item"><a class="header__navigation-wrapper-link text-h-25" href="catalog.html">Каталог</a></li>
