@@ -10,7 +10,7 @@ searchActive ();
 wrapperOpen ();
 
 
-const heroSwiper = document.querySelector('.hero-swiper');
+const heroSwiper = document.querySelector('.swiper');
 const heroSlider = new Swiper(heroSwiper, {
  modules: [Navigation, Scrollbar, Pagination],
   loop: true,
@@ -46,8 +46,8 @@ const heroSlider = new Swiper(heroSwiper, {
   },
 
   navigation: {
-    nextEl: '.programs__button--next',
-    prevEl: '.programs__button--prev',
+    nextEl: '.swiper-button-prev',
+    prevEl: '.swiper-button-next',
     disabledClass: 'disabled',
   },
 });

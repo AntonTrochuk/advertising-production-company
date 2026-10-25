@@ -6,27 +6,42 @@ header.main-header.header
       div.header__navigation-logo
         if isHomePage
           picture
-            source(media="(max-width: 767px)", width="70", height="60", type="image/svg+xml", srcset="img/logo.svg")
-            source(media="(max-width: 1023px)", width="130", height="100", type="image/svg+xml", srcset="img/logo.svg")
-            img(src="img/logo.svg", alt="лого", width="130", height="100")
+            source(media="(min-width:1440px)", width="130", height="100", type="image/svg+xml", srcset="img/logo.svg")
+            source(media="(min-width: 768px)", width="130", height="100", type="image/svg+xml", srcset="img/logo.svg")
+            img(src="img/logo.svg", alt="лого", width="70", height="60")
         else
           a.header__navigation-logo(href="index.html")
             picture
-              source(media="(max-width: 767px)", width="70", height="60", type="image/svg+xml", srcset="img/logo.svg")
-              source(media="(max-width: 1023px)", width="130", height="100", type="image/svg+xml", srcset="img/logo.svg")
-              img(src="img/logo.svg", alt="лого", width="130", height="100")
+              source(media="(min-width:1440px)", width="130", height="100", type="image/svg+xml", srcset="img/logo.svg")
+              source(media="(min-width: 768px)", width="130", height="100", type="image/svg+xml", srcset="img/logo.svg")
+              img(src="img/logo.svg", alt="лого", width="70", height="60")
       div.header__navigation-wrapper
         div.header__navigation-wrapper-mobile-icon
           svg
             use(xlink:href=`img/icons/sprite.svg#icons_mobile_menu`)
         ul.header__navigation-wrapper-list
-          +navigationWrapperItem('Главная','index')
-          +navigationWrapperItem('Каталог','catalog')
-          +navigationWrapperItem('Контакты','#')
-      div.header__navigation-search.search
-        form(action="/",  method="post")
-          label(for="search")
-          input(type="text", name="search", id="search", maxlength="18")
-          button(type="button")
+          li.header__navigation-wrapper-item
+            a.header__navigation-wrapper-link.text-h-25(href="index.html")
+              span Главная
+          li.header__navigation-wrapper-item
+            a.header__navigation-wrapper-link.text-h-25(href="catalog.html")
+              span Каталог
+          li.header__navigation-wrapper-item
+            a.header__navigation-wrapper-link.text-h-25(href="#")
+              span Контакты
+      ul.header__navigation-social-list.social-list
+        li.social-list__item
+          a.social-list__link(href="https://wa.me/+79912244744" target="_blank")
+            span.visually-hidden ссылка на whatsapp
             svg
-              use(xlink:href=`img/icons/sprite.svg#icon-search`)
+              use(xlink:href=`img/icons/sprite.svg#whatsapp`)
+        li.social-list__item
+          a.social-list__link(href="#")
+            span.visually-hidden ссылка на max
+            svg
+              use(xlink:href=`img/icons/sprite.svg#max`)
+        li.social-list__item
+          a.social-list__link(href="https://t.me/+79912244744" target="_blank")
+            span.visually-hidden ссылка на telegram
+            svg
+              use(xlink:href=`img/icons/sprite.svg#telegram`)

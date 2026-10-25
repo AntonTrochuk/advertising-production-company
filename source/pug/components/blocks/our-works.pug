@@ -3,93 +3,36 @@ include /components/mixins/mixins.pug
 section.main-container__our-works.our-works
   div.our-works__container
     div.our-works__subtitle-block
-      h2 Наши работы
-      button.our-works__button
-        span Связаться
-    div.our-works__image-container.our-works-swiper
+      h2 Выбирают именно нас
+      span Почему бренды
+    div.our-works__block-swiper.swiper
       ul.our-works__list.swiper-wrapper
         li.our-works__item.swiper-slide
-          div.our-works__item-content
-            picture
-              source(
-                media="(max-width: 767px)",
-                width="1050",
-                height="450",
-                type="image/webp",
-                srcset="img/our_works_img1@1x.webp 1x, img/our_works_img1@2x.webp 2x"
-              )
-              source(
-                media="(max-width: 1023px)",
-                width="1050",
-                height="450",
-                type="image/webp",
-                srcset="img/our_works_img1@1x.webp 1x, img/our_works_img1@2x.webp 2x"
-              )
-              source(
-                type="image/webp",
-                srcset="img/our_works_img1@1x.webp 1x, img/our_works_img1@2x.webp 2x"
-              )
-              source(
-                media="(max-width: 767px)",
-                width="1050",
-                height="450",
-                type="image/jpg",
-                srcset="img/our_works_img1@1x.jpg 1x, img/our_works_img1@2x.jpg 2x"
-              )
-              source(
-                media="(max-width: 1023px)",
-                width="1050",
-                height="450",
-                type="image/jpg",
-                srcset="img/our_works_img1@1x.jpg 1x, img/our_works_img1@2x.jpg 2x"
-              )
-              img(
-                src="img/our_works_img1@1x.jpg",
-                srcset="img/our_works_img1@2x.jpg 2x",
-                width="1050",
-                height="450",
-                alt="/"
-              )
+          div.our-works__item-text
+            div.our-works__item-text-header
+              svg
+                use(xlink:href=`img/icons/sprite.svg#icon-asterisk`)
+              h3 Честные сроки
+            p Мы всегда называем реальные сроки и фиксированную цену до начала работ. Без скрытых доплат и задержек — только честное сотрудничество.
+          div.our-works__item-image
+            img(src="img/2150346497.jpg", alt="#")
         li.our-works__item.swiper-slide
-          div.our-works__item-content
-            picture
-              source(
-                media="(max-width: 767px)",
-                width="1050",
-                height="450",
-                type="image/webp",
-                srcset="img/our_works_img2@1x.webp 1x, img/our_works_img2@2x.webp 2x"
-              )
-              source(
-                media="(max-width: 1023px)",
-                width="1050",
-                height="450",
-                type="image/webp",
-                srcset="img/our_works_img2@1x.webp 1x, img/our_works_img2@2x.webp 2x"
-              )
-              source(
-                type="image/webp",
-                srcset="img/our_works_img2@1x.webp 1x, img/our_works_img2@2x.webp 2x"
-              )
-              source(
-                media="(max-width: 767px)",
-                width="1050",
-                height="450",
-                type="image/jpg",
-                srcset="img/our_works_img2@1x.jpg 1x, img/our_works_img2@2x.jpg 2x"
-              )
-              source(
-                media="(max-width: 1023px)",
-                width="1050",
-                height="450",
-                type="image/jpg",
-                srcset="img/our_works_img2@1x.jpg 1x, img/our_works_img2@2x.jpg 2x"
-              )
-              img(
-                src="img/our_works_img2@1x.jpg",
-                srcset="img/our_works_img2@2x.jpg 2x",
-                width="1050",
-                height="450",
-                alt="/"
-              )
-      div.our-works__pagination.swiper-pagination
+          div.our-works__item-text
+            div.our-works__item-text-header
+              svg
+                use(xlink:href=`img/icons/sprite.svg#icon-asterisk`)
+              h3 Современное оборудование
+            p Мы используем профессиональные печатные машины последнего поколения, обеспечивая точную цветопередачу, чёткие линии и стабильное качество даже при больших тиражах.
+          div.our-works__item-image
+            img(src="img/26629.jpg", alt="#")
+        li.our-works__item.swiper-slide
+          div.our-works__item-text
+            div.our-works__item-text-header
+              svg
+                use(xlink:href=`img/icons/sprite.svg#icon-asterisk`)
+              h3 Индивидуальный подход
+            p Каждый заказ рассматриваем как уникальный проект. Подбираем оптимальные материалы, технологии и формат под конкретную задачу клиента.
+          div.our-works__item-image
+            img(src="img/140.jpg", alt="#")
+      div.swiper-button-prev
+      div.swiper-button-next

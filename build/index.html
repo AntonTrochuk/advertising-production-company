@@ -21,8 +21,8 @@
           <nav class="header__navigation">
             <div class="header__navigation-logo">
               <picture>
-                <source media="(max-width: 767px)" width="70" height="60" type="image/svg+xml" srcset="img/logo.svg">
-                <source media="(max-width: 1023px)" width="130" height="100" type="image/svg+xml" srcset="img/logo.svg"><img src="img/logo.svg" alt="лого" width="130" height="100">
+                <source media="(min-width:1440px)" width="130" height="100" type="image/svg+xml" srcset="img/logo.svg">
+                <source media="(min-width: 768px)" width="130" height="100" type="image/svg+xml" srcset="img/logo.svg"><img src="img/logo.svg" alt="лого" width="70" height="60">
               </picture>
             </div>
             <div class="header__navigation-wrapper">
@@ -32,145 +32,102 @@
                 </svg>
               </div>
               <ul class="header__navigation-wrapper-list">
-                      <li class="header__navigation-wrapper-item"><a class="header__navigation-wrapper-link text-h-25" href="index.html">Главная</a></li>
-                      <li class="header__navigation-wrapper-item"><a class="header__navigation-wrapper-link text-h-25" href="catalog.html">Каталог</a></li>
-                      <li class="header__navigation-wrapper-item"><a class="header__navigation-wrapper-link text-h-25" href="#.html">Контакты</a></li>
+                <li class="header__navigation-wrapper-item"><a class="header__navigation-wrapper-link text-h-25" href="index.html"><span>Главная</span></a></li>
+                <li class="header__navigation-wrapper-item"><a class="header__navigation-wrapper-link text-h-25" href="catalog.html"><span>Каталог</span></a></li>
+                <li class="header__navigation-wrapper-item"><a class="header__navigation-wrapper-link text-h-25" href="#"><span>Контакты</span></a></li>
               </ul>
             </div>
-            <div class="header__navigation-search search">
-              <form action="/" method="post">
-                <label for="search"></label>
-                <input type="text" name="search" id="search" maxlength="18">
-                <button type="button">
+            <ul class="header__navigation-social-list social-list">
+              <li class="social-list__item"><a class="social-list__link" href="https://wa.me/+79912244744" target="_blank"><span class="visually-hidden">ссылка на whatsapp</span>
                   <svg>
-                    <use xlink:href="img/icons/sprite.svg#icon-search"></use>
-                  </svg>
-                </button>
-              </form>
-            </div>
+                    <use xlink:href="img/icons/sprite.svg#whatsapp"></use>
+                  </svg></a></li>
+              <li class="social-list__item"><a class="social-list__link" href="#"><span class="visually-hidden">ссылка на max</span>
+                  <svg>
+                    <use xlink:href="img/icons/sprite.svg#max"></use>
+                  </svg></a></li>
+              <li class="social-list__item"><a class="social-list__link" href="https://t.me/+79912244744" target="_blank"><span class="visually-hidden">ссылка на telegram</span>
+                  <svg>
+                    <use xlink:href="img/icons/sprite.svg#telegram"></use>
+                  </svg></a></li>
+            </ul>
           </nav>
         </div>
       </header>
       <main class="main-container">
         <section class="main-container__hero hero">
           <div class="hero__block">
-            <div class="hero__container hero-swiper">
-              <ul class="hero__list swiper-wrapper">
-                <li class="hero__item swiper-slide">
-                  <div class="hero__item-content">
-                    <div class="hero__content-block">
-                      <h3>Сделаем принты</h3>
-                      <h4>На пакеты</h4>
-                      <p>Опытные сотрудники учтут все ваши пожелания</p>
-                              <button class="hero__button button text-b18" type="button">Заказать
-                              </button>
-                    </div>
-                    <div class="hero__image-block">
-                      <picture>
-                        <source media="(max-width: 767px)" width="550" height="550" type="image/webp" srcset="img/hero_bags@1x.webp 1x, img/hero_bags@2x.webp 2x">
-                        <source media="(max-width: 1023px)" width="550" height="550" type="image/webp" srcset="img/hero_bags@1x.webp 1x, img/hero_bags@2x.webp 2x">
-                        <source type="image/webp" srcset="img/hero_bags@1x.webp 1x, img/hero_bags@2x.webp 2x">
-                        <source media="(max-width: 767px)" width="550" height="550" type="image/png" srcset="img/hero_bags@1x.png 1x, img/hero_bags@2x.png 2x">
-                        <source media="(max-width: 1023px)" width="550" height="550" type="image/png" srcset="img/hero_bags@1x.png 1x, img/hero_bags@2x.png 2x"><img src="img/hero_bags@1x.png" srcset="img/hero_bags@2x.png 2x" width="550" height="550" alt="/">
-                      </picture>
-                    </div>
-                  </div>
-                </li>
-                <li class="hero__item swiper-slide">
-                  <div class="hero__item-content">
-                    <div class="hero__content-block">
-                      <h3>Скидка 20%</h3>
-                      <h4>На кружки</h4>
-                      <p>При заказе от 100 штук</p>
-                              <button class="hero__button button text-b18" type="button">Заказать
-                              </button>
-                    </div>
-                    <div class="hero__image-block">
-                      <picture>
-                        <source media="(max-width: 767px)" width="550" height="550" type="image/webp" srcset="img/mugs@1x.webp 1x, img/mugs@2x.webp 2x">
-                        <source media="(max-width: 1023px)" width="550" height="550" type="image/webp" srcset="img/mugs@1x.webp 1x, img/mugs@2x.webp 2x">
-                        <source type="image/webp" srcset="img/mugs@1x.webp 1x, img/mugs@2x.webp 2x">
-                        <source media="(max-width: 767px)" width="550" height="550" type="image/png" srcset="img/mugs@1x.png 1x, img/mugs@2x.png 2x">
-                        <source media="(max-width: 1023px)" width="550" height="550" type="image/png" srcset="img/mugs@1x.png 1x, img/mugs@2x.png 2x"><img src="img/mugs@1x.png" srcset="img/mugs@2x.png 2x" width="550" height="550" alt="/">
-                      </picture>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-              <div class="hero__pagination swiper-pagination"></div>
+            <div class="hero__subtitle">
+              <h1>Качественная печатная продукция</h1>
+              <h3>Опытные сотрудники учтут все ваши пожелания</h3>
             </div>
+            <div class="hero__text"><span>Оперативная полиграфия, офсетная и цифровая печать, дизайн и постпечатная обработка — всё, чтобы ваш бренд выделялся.</span></div>
+            <div class="hero__button"><a class="hero__button-link" href="#"><span>Связаться</span></a></div>
+          </div>
+        </section>
+        <section class="main-container__offer offer">
+          <div class="offer__block">
+            <h2>Успей воспользоваться</h2>
+            <div class="offer__block-text">
+              <p>Закажите 1000 полноцветных листовок A6 на мелованной бумаге 130 г/м² всего за 990 рублей! В стоимость включены: печать, резка и упаковка.</p><span>Срок действия акции: до конца месяца.</span>
+            </div>
+            <div class="offer__button"><a class="offer__button-link" href=""><span>Связаться</span></a></div>
           </div>
         </section>
         <section class="main-container__popular popular">
           <div class="popular__container">
             <div class="popular__subtitle-block">
-              <h2>Популярные товары</h2><span>По мнению наших клиетов</span>
+              <h2>Популярные категории</h2><span>По мнению наших клиетов</span>
             </div>
             <ul class="popular__list">
-                      <li class="popular__item"><a class="popular__item-link" href="#">
-                          <div class="popular__content-block">
-                            <div class="popular__stock-block stock-block"><span class="stock-block__discount stock-block__discount--active">%</span></div>
-                            <div class="popular__image-block">
-                              <picture>
-                                <source media="(max-width: 767px)" type="image/webp" srcset="img/hero_bags@1x.webp 1x, img/hero_bags@2x.webp 2x">
-                                <source media="(max-width: 1023px)" type="image/webp" srcset="img/hero_bags@1x.webp 1x, img/hero_bags@2x.webp 2x">
-                                <source type="image/webp" srcset="img/hero_bags@1x.webp 1x, img/hero_bags@2x.webp 2x">
-                                <source media="(max-width: 767px)" type="image/png" srcset="img/hero_bags@1x.png 1x, img/hero_bags@2x.png 2x">
-                                <source media="(max-width: 1023px)" type="image/png" srcset="img/hero_bags@1x.png 1x, img/hero_bags@2x.png 2x"><img src="img/hero_bags@1x.png" srcset="img/hero_bags@2x.png 2x" alt="/">
-                              </picture>
-                            </div>
-                            <div class="popular__text-block">
-                              <h3>Печать на пакетах</h3><span>От 100₽</span>
-                            </div>
-                          </div></a></li>
-                      <li class="popular__item"><a class="popular__item-link" href="#">
-                          <div class="popular__content-block">
-                            <div class="popular__stock-block stock-block"><span class="stock-block__discount stock-block__discount--active">%</span></div>
-                            <div class="popular__image-block">
-                              <picture>
-                                <source media="(max-width: 767px)" type="image/webp" srcset="img/mugs@1x.webp 1x, img/mugs@2x.webp 2x">
-                                <source media="(max-width: 1023px)" type="image/webp" srcset="img/mugs@1x.webp 1x, img/mugs@2x.webp 2x">
-                                <source type="image/webp" srcset="img/mugs@1x.webp 1x, img/mugs@2x.webp 2x">
-                                <source media="(max-width: 767px)" type="image/png" srcset="img/mugs@1x.png 1x, img/mugs@2x.png 2x">
-                                <source media="(max-width: 1023px)" type="image/png" srcset="img/mugs@1x.png 1x, img/mugs@2x.png 2x"><img src="img/mugs@1x.png" srcset="img/mugs@2x.png 2x" alt="/">
-                              </picture>
-                            </div>
-                            <div class="popular__text-block">
-                              <h3>Печать на кружках</h3><span>От 150₽</span>
-                            </div>
-                          </div></a></li>
-                      <li class="popular__item"><a class="popular__item-link" href="#">
-                          <div class="popular__content-block">
-                            <div class="popular__stock-block stock-block"><span class="stock-block__discount stock-block__discount--active">%</span></div>
-                            <div class="popular__image-block">
-                              <picture>
-                                <source media="(max-width: 767px)" type="image/webp" srcset="img/plates@1x.webp 1x, img/plates@2x.webp 2x">
-                                <source media="(max-width: 1023px)" type="image/webp" srcset="img/plates@1x.webp 1x, img/plates@2x.webp 2x">
-                                <source type="image/webp" srcset="img/plates@1x.webp 1x, img/plates@2x.webp 2x">
-                                <source media="(max-width: 767px)" type="image/png" srcset="img/plates@1x.png 1x, img/plates@2x.png 2x">
-                                <source media="(max-width: 1023px)" type="image/png" srcset="img/plates@1x.png 1x, img/plates@2x.png 2x"><img src="img/plates@1x.png" srcset="img/plates@2x.png 2x" alt="/">
-                              </picture>
-                            </div>
-                            <div class="popular__text-block">
-                              <h3>Печать на тарелках</h3><span>От 500₽</span>
-                            </div>
-                          </div></a></li>
-                      <li class="popular__item"><a class="popular__item-link" href="#">
-                          <div class="popular__content-block">
-                            <div class="popular__stock-block stock-block"><span class="stock-block__discount stock-block__discount--active">%</span></div>
-                            <div class="popular__image-block">
-                              <picture>
-                                <source media="(max-width: 767px)" type="image/webp" srcset="img/hero_bags@1x.webp 1x, img/hero_bags@2x.webp 2x">
-                                <source media="(max-width: 1023px)" type="image/webp" srcset="img/hero_bags@1x.webp 1x, img/hero_bags@2x.webp 2x">
-                                <source type="image/webp" srcset="img/hero_bags@1x.webp 1x, img/hero_bags@2x.webp 2x">
-                                <source media="(max-width: 767px)" type="image/png" srcset="img/hero_bags@1x.png 1x, img/hero_bags@2x.png 2x">
-                                <source media="(max-width: 1023px)" type="image/png" srcset="img/hero_bags@1x.png 1x, img/hero_bags@2x.png 2x"><img src="img/hero_bags@1x.png" srcset="img/hero_bags@2x.png 2x" alt="/">
-                              </picture>
-                            </div>
-                            <div class="popular__text-block">
-                              <h3>Печать на пакетах</h3><span>От 100₽</span>
-                            </div>
-                          </div></a></li>
+              <li class="popular__item">
+                <svg>
+                  <use xlink:href="img/icons/sprite.svg#popular_outdoor_advertising"></use>
+                </svg>
+                <div class="popular__item-text-block">
+                  <h4>Наружная реклама</h4><span>Печать в максимально короткие сроки</span>
+                </div>
+              </li>
+              <li class="popular__item">
+                <svg>
+                  <use xlink:href="img/icons/sprite.svg#popular_outdoor_advertising"></use>
+                </svg>
+                <div class="popular__item-text-block">
+                  <h4>Наружная реклама</h4><span>Печать в максимально короткие сроки</span>
+                </div>
+              </li>
+              <li class="popular__item">
+                <svg>
+                  <use xlink:href="img/icons/sprite.svg#popular_outdoor_advertising"></use>
+                </svg>
+                <div class="popular__item-text-block">
+                  <h4>Наружная реклама</h4><span>Печать в максимально короткие сроки</span>
+                </div>
+              </li>
+              <li class="popular__item">
+                <svg>
+                  <use xlink:href="img/icons/sprite.svg#popular_outdoor_advertising"></use>
+                </svg>
+                <div class="popular__item-text-block">
+                  <h4>Наружная реклама</h4><span>Печать в максимально короткие сроки</span>
+                </div>
+              </li>
+              <li class="popular__item">
+                <svg>
+                  <use xlink:href="img/icons/sprite.svg#popular_outdoor_advertising"></use>
+                </svg>
+                <div class="popular__item-text-block">
+                  <h4>Наружная реклама</h4><span>Печать в максимально короткие сроки</span>
+                </div>
+              </li>
+              <li class="popular__item">
+                <svg>
+                  <use xlink:href="img/icons/sprite.svg#popular_outdoor_advertising"></use>
+                </svg>
+                <div class="popular__item-text-block">
+                  <h4>Наружная реклама</h4><span>Печать в максимально короткие сроки</span>
+                </div>
+              </li>
             </ul>
           </div>
         </section>
@@ -345,35 +302,49 @@
         <section class="main-container__our-works our-works">
           <div class="our-works__container">
             <div class="our-works__subtitle-block">
-              <h2>Наши работы</h2>
-              <button class="our-works__button"><span>Связаться</span></button>
+              <h2>Выбирают именно нас</h2><span>Почему бренды</span>
             </div>
-            <div class="our-works__image-container our-works-swiper">
+            <div class="our-works__block-swiper swiper">
               <ul class="our-works__list swiper-wrapper">
                 <li class="our-works__item swiper-slide">
-                  <div class="our-works__item-content">
-                    <picture>
-                      <source media="(max-width: 767px)" width="1050" height="450" type="image/webp" srcset="img/our_works_img1@1x.webp 1x, img/our_works_img1@2x.webp 2x">
-                      <source media="(max-width: 1023px)" width="1050" height="450" type="image/webp" srcset="img/our_works_img1@1x.webp 1x, img/our_works_img1@2x.webp 2x">
-                      <source type="image/webp" srcset="img/our_works_img1@1x.webp 1x, img/our_works_img1@2x.webp 2x">
-                      <source media="(max-width: 767px)" width="1050" height="450" type="image/jpg" srcset="img/our_works_img1@1x.jpg 1x, img/our_works_img1@2x.jpg 2x">
-                      <source media="(max-width: 1023px)" width="1050" height="450" type="image/jpg" srcset="img/our_works_img1@1x.jpg 1x, img/our_works_img1@2x.jpg 2x"><img src="img/our_works_img1@1x.jpg" srcset="img/our_works_img1@2x.jpg 2x" width="1050" height="450" alt="/">
-                    </picture>
+                  <div class="our-works__item-text">
+                    <div class="our-works__item-text-header">
+                      <svg>
+                        <use xlink:href="img/icons/sprite.svg#icon-asterisk"></use>
+                      </svg>
+                      <h3>Честные сроки</h3>
+                    </div>
+                    <p>Мы всегда называем реальные сроки и фиксированную цену до начала работ. Без скрытых доплат и задержек — только честное сотрудничество.</p>
                   </div>
+                  <div class="our-works__item-image"><img src="img/2150346497.jpg" alt="#"></div>
                 </li>
                 <li class="our-works__item swiper-slide">
-                  <div class="our-works__item-content">
-                    <picture>
-                      <source media="(max-width: 767px)" width="1050" height="450" type="image/webp" srcset="img/our_works_img2@1x.webp 1x, img/our_works_img2@2x.webp 2x">
-                      <source media="(max-width: 1023px)" width="1050" height="450" type="image/webp" srcset="img/our_works_img2@1x.webp 1x, img/our_works_img2@2x.webp 2x">
-                      <source type="image/webp" srcset="img/our_works_img2@1x.webp 1x, img/our_works_img2@2x.webp 2x">
-                      <source media="(max-width: 767px)" width="1050" height="450" type="image/jpg" srcset="img/our_works_img2@1x.jpg 1x, img/our_works_img2@2x.jpg 2x">
-                      <source media="(max-width: 1023px)" width="1050" height="450" type="image/jpg" srcset="img/our_works_img2@1x.jpg 1x, img/our_works_img2@2x.jpg 2x"><img src="img/our_works_img2@1x.jpg" srcset="img/our_works_img2@2x.jpg 2x" width="1050" height="450" alt="/">
-                    </picture>
+                  <div class="our-works__item-text">
+                    <div class="our-works__item-text-header">
+                      <svg>
+                        <use xlink:href="img/icons/sprite.svg#icon-asterisk"></use>
+                      </svg>
+                      <h3>Современное оборудование</h3>
+                    </div>
+                    <p>Мы используем профессиональные печатные машины последнего поколения, обеспечивая точную цветопередачу, чёткие линии и стабильное качество даже при больших тиражах.</p>
                   </div>
+                  <div class="our-works__item-image"><img src="img/26629.jpg" alt="#"></div>
+                </li>
+                <li class="our-works__item swiper-slide">
+                  <div class="our-works__item-text">
+                    <div class="our-works__item-text-header">
+                      <svg>
+                        <use xlink:href="img/icons/sprite.svg#icon-asterisk"></use>
+                      </svg>
+                      <h3>Индивидуальный подход</h3>
+                    </div>
+                    <p>Каждый заказ рассматриваем как уникальный проект. Подбираем оптимальные материалы, технологии и формат под конкретную задачу клиента.</p>
+                  </div>
+                  <div class="our-works__item-image"><img src="img/140.jpg" alt="#"></div>
                 </li>
               </ul>
-              <div class="our-works__pagination swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
             </div>
           </div>
         </section>

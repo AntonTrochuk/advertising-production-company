@@ -21,8 +21,8 @@
           <nav class="header__navigation">
             <div class="header__navigation-logo"><a class="header__navigation-logo" href="index.html">
                 <picture>
-                  <source media="(max-width: 767px)" width="70" height="60" type="image/svg+xml" srcset="img/logo.svg">
-                  <source media="(max-width: 1023px)" width="130" height="100" type="image/svg+xml" srcset="img/logo.svg"><img src="img/logo.svg" alt="лого" width="130" height="100">
+                  <source media="(min-width:1440px)" width="130" height="100" type="image/svg+xml" srcset="img/logo.svg">
+                  <source media="(min-width: 768px)" width="130" height="100" type="image/svg+xml" srcset="img/logo.svg"><img src="img/logo.svg" alt="лого" width="70" height="60">
                 </picture></a>
             </div>
             <div class="header__navigation-wrapper">
@@ -32,22 +32,25 @@
                 </svg>
               </div>
               <ul class="header__navigation-wrapper-list">
-                      <li class="header__navigation-wrapper-item"><a class="header__navigation-wrapper-link text-h-25" href="index.html">Главная</a></li>
-                      <li class="header__navigation-wrapper-item"><a class="header__navigation-wrapper-link text-h-25" href="catalog.html">Каталог</a></li>
-                      <li class="header__navigation-wrapper-item"><a class="header__navigation-wrapper-link text-h-25" href="#.html">Контакты</a></li>
+                <li class="header__navigation-wrapper-item"><a class="header__navigation-wrapper-link text-h-25" href="index.html"><span>Главная</span></a></li>
+                <li class="header__navigation-wrapper-item"><a class="header__navigation-wrapper-link text-h-25" href="catalog.html"><span>Каталог</span></a></li>
+                <li class="header__navigation-wrapper-item"><a class="header__navigation-wrapper-link text-h-25" href="#"><span>Контакты</span></a></li>
               </ul>
             </div>
-            <div class="header__navigation-search search">
-              <form action="/" method="post">
-                <label for="search"></label>
-                <input type="text" name="search" id="search" maxlength="18">
-                <button type="button">
+            <ul class="header__navigation-social-list social-list">
+              <li class="social-list__item"><a class="social-list__link" href="https://wa.me/+79912244744" target="_blank"><span class="visually-hidden">ссылка на whatsapp</span>
                   <svg>
-                    <use xlink:href="img/icons/sprite.svg#icon-search"></use>
-                  </svg>
-                </button>
-              </form>
-            </div>
+                    <use xlink:href="img/icons/sprite.svg#whatsapp"></use>
+                  </svg></a></li>
+              <li class="social-list__item"><a class="social-list__link" href="#"><span class="visually-hidden">ссылка на max</span>
+                  <svg>
+                    <use xlink:href="img/icons/sprite.svg#max"></use>
+                  </svg></a></li>
+              <li class="social-list__item"><a class="social-list__link" href="https://t.me/+79912244744" target="_blank"><span class="visually-hidden">ссылка на telegram</span>
+                  <svg>
+                    <use xlink:href="img/icons/sprite.svg#telegram"></use>
+                  </svg></a></li>
+            </ul>
           </nav>
         </div>
       </header>

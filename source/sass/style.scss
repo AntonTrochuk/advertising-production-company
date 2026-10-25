@@ -7,11 +7,11 @@
 
 /* BLOCKS */
 @use "./blocks/button" as *;
+@use "./blocks/social-list" as *;
 @use "./blocks/header" as *;
 @use "./blocks/hero" as *;
-@use "./blocks/search" as *;
+@use "./blocks/offer" as *;
 @use "./blocks/popular" as *;
-@use "./blocks/stock-block" as *;
 @use "./blocks/runing-line" as *;
 @use "./blocks/our-works" as *;
 @use "./blocks/content" as *;

@@ -1,0 +1,36 @@
+@use "../common/variables.scss" as *;
+@use "../common/mixins" as *;
+
+.social-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 16px;
+
+  @media (min-width: $tablet-width) {
+    gap: 31px;
+  }
+}
+
+.social-list__link {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  justify-items: center;
+  scale: 1;
+  transition: all 0.3s ease;
+
+  svg {
+    width: 44px;
+    height: 44px;
+
+    @media (min-width: $tablet-width) {
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  &:hover {
+    scale: 1.2;
+  }
+}
