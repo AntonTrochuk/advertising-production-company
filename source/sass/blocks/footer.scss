@@ -2,7 +2,7 @@
 @use "../common/mixins" as *;
 
 .footer {
-  background-color: $color-background-purple-blue;
+  background-color: #FCFBF5;
   margin-top: auto;
 }
 
@@ -38,7 +38,7 @@
 
 .footer__item-link {
   text-decoration: none;
-  color: $color-text-grey;
+  color: black;
   font-family: $basic-font;
   font-style: normal;
   font-weight: 500;

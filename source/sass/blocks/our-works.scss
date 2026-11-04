@@ -3,6 +3,12 @@
 
 .our-works {
   background-color: #FCFBF5;
+  background:
+
+    radial-gradient(circle at 10% 10%, #ffffff 0%, rgba(255, 255, 255, 0) 60%),
+
+    linear-gradient(225deg, #5472bd 0%, #dce3fa 60%, #8ba7ff 100%);
+
 }
 
 .our-works__container {
@@ -11,7 +17,7 @@
   padding: 25px 12px;
 
   @media (min-width: $desktop-width) {
-    padding: 50px 50px;
+    padding: 50px 50px 100px;
     max-width: 1540px;
   }
 }
